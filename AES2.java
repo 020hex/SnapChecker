@@ -1,5 +1,3 @@
-package javaapplication4;
-
 import java.security.Key;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -41,7 +39,7 @@ import sun.misc.BASE64Encoder;
     }
     public static void main(String[] args)  {
             try {
-                AES2 aes = new AES("1234567890123456"); // in AES the password have to be 16 char
+                AES2 aes = new AES("1234567890123456"); // in AES the password have to be 16 char or 32 
                 String x = aes.encrypt("Hi I'm hEx");
                 System.out.println(x);
                 String y = aes.decrypt("sH+3VLKKjrgoTIxnn6aQUQ==");
